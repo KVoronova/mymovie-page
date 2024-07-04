@@ -1,3 +1,4 @@
 # mymovie-page
-Landingpage CSS/HTML/JS
+Individual educational project 
+Tech stack: HTML,CSS,JS
 Link : https://mymovie-page.netlify.app
