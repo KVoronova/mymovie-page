@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/mymovies.png">
+    <title>Movie Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">MyMovies</a>
+        <ul class="nav">
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My list</a></li>
+            <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="content active house-of-the-dragon">
+            <img src="/img/House-of-the-dragon-title-2.png" alt="GOT" class="movie-title">
+            <h4>
+                <span>2024</span>
+                <span><i>18+</i></span>
+                <span>18h 50min</span>
+                <span>Action</span>
+            </h4>
+            <p>The Targaryen dynasty is at the absolute apex of its power, with more than 10 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+               Watch</a>
+               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                My List</a>
+               <a href="#" class="play-new" onclick="toggleVideo();">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                Watch Trailer 
+                </a>  
+            </div>
+             <!-- AAAAAAAAAAAAAAAAAAAAAAA
+             <div class="trailer">
+                <iframe width="1477" height="645" 
+                src="https://www.youtube.com/embed/YN2H_sKcmGw" title="House of the Dragon Season 2 | Official Trailer | Max" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen onclick="toggleVideo();"></iframe>
+             </div>
+            AAAAAAAAAAAAAAAAAAAAAAA-->
+        </div>
+
+        <div class="content the-little-mermaid">
+            <img src="/img/the-little-mermaid-title.png" alt="Mermaid" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>6+</i></span>
+                <span>2h 15min</span>
+                <span>Family</span>
+            </h4>
+            <p>The youngest of King Triton's daughters, Ariel is a beautiful and spirited young mermaid with a thirst for adventure. Longing to find out more about the world beyond the sea, Ariel visits the surface and falls for the dashing Prince Eric. Following her heart, she makes a deal with the evil sea witch, Ursula, to experience life on land.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+               Watch</a>
+               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                My List</a>
+                <a href="#" class="play-new" onclick="toggleVideo();">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                Watch Trailer 
+                </a>
+            </div>
+        </div>
+
+        <div class="content dune-background">
+            <img src="/img/dune-title.png" alt="Dune" class="movie-title">
+            <h4>
+                <span>2024</span>
+                <span><i>16+</i></span>
+                <span>2h 46min</span>
+                <span>Adventure</span>
+            </h4>
+            <p>Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+               Watch</a>
+               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                My List</a>
+                <a href="#" class="play-new" onclick="toggleVideo();">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                Watch Trailer 
+                </a>
+            </div>
+        </div>
+
+        <div class="content barbie-background">
+            <img src="/img/Barbie-title.png" alt="Barbie" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>12+</i></span>
+                <span>1h 54min</span>
+                <span>Comedy</span>
+            </h4>
+            <p>Barbie the Doll lives in bliss in the matriarchal society of Barbieland feeling good about her role in the world in the various iterations of Barbies over the years showing girls that play with her that they can be whatever and whoever they want. On the flip side, Ken, who also lives in Barbieland, is unnoticed except in relation to Barbie, which is however one step above any other doll in Barbieland, such as Allan.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+               Watch</a>
+               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                My List</a>
+                <a href="#" class="play-new" onclick="toggleVideo();">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                Watch Trailer 
+                </a>
+            </div>
+        </div>
+
+        <div class="content oppenheimer-background">
+            <img src="/img/Oppenheimer-title.png" alt="Oppenheimer" class="movie-title">
+            <h4>
+                <span>2023</span>
+                <span><i>16+</i></span>
+                <span>3h 0min</span>
+                <span>Biography</span>
+            </h4>
+            <p>A dramatization of the life story of J. Robert Oppenheimer, the physicist who had a large hand in the development of the atomic bomb, thus helping end World War 2. We see his life from university days all the way to post-WW2, where his fame saw him embroiled in political machinations.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+               Watch</a>
+               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                My List</a>
+                <a href="#" class="play-new" onclick="toggleVideo();">
+                    <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+                Watch Trailer 
+                </a>
+            </div>
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" 
+                onclick="changeBg('house-of-the-dragon-background-1.jpg', 'house-of-the-dragon');">
+                    <img src="/img/house-of-the-dragon-min-img.jpeg" alt="GOT">
+                </div>
+                <div class="carousel-item"  onclick="changeBg('mermaid-background-1.jpeg', 'the-little-mermaid');">
+                    <img src="/img/mermaid-min-2.jpeg" alt="LittleMermaid">
+                </div>
+                <div class="carousel-item"
+                onclick="changeBg('dune-background-1.jpeg', 'dune-background');">
+                    <img src="/img/dune-min-2.jpeg" alt="DuneParth2">
+                </div>
+                <div class="carousel-item"
+                onclick="changeBg('barbie-background-1.jpeg', 'barbie-background');">
+                    <img src="/img/barbie-min-2.jpeg" alt="Barbie">
+                </div>
+                <div class="carousel-item" onclick="changeBg('oppenheimer-background-1.jpeg', 'oppenheimer-background');">
+                    <img src="/img/Oppenheimer-min-img.webp" alt="Oppenheimer">
+                </div>
+            </div>
+        </div>
+   <!--  <a href="#" class="play" onclick="toggleVideo();">
+            <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+        Watch Trailer 
+        </a> -->
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="trailer">
+     <video src="/assets/houseoftheDragon-trailer.mp4" muted controls="true"  autoplay="true"  onclick="changeTrailer();"></video>
+     <img class="close" src="/img/close.png" 
+     alt="close video" 
+     onclick="toggleVideo();">
+    </div> 
+
+
+<section class="movies">
+        <div class="movie-head">
+            <h2 class="movie-header">What to watch</h2>
+            <h3 class="movie-header-third">Top picks 
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </h3>
+        </div>
+
+   <div class="filter-bar">
+
+            <select name="genre" class="genre">
+                <option value="all genre">All genres</option>
+                <option value="biography">Biography</option>
+                <option value="comedy">Comedy</option>
+                <option value="fantastic">Fantasy</option>
+                <option value="family">Family</option>
+            </select>
+            <select name="year" class="year">
+                <option value="all years">All years</option>
+                <option value="2024">2024</option>
+                <option value="2020-2023">2020-2023</option>
+                <option value="2010-2019">2010-2019</option>
+                <option value="2000-2009">2000-2009</option>
+            </select>
+    </div>
+
+    <div class="movies-grid">
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/dune-poster-first-min.webp" alt="Dune" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.3</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">Dune</h3>
+
+            <div class="card-info">
+                <span class="genre">Adventure</span>
+                <span class="year">2021</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/john-wick-min.webp" alt="John Wick" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>7.4</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">John Wick: Chapter 4</h3>
+
+            <div class="card-info">
+                <span class="genre">Crime</span>
+                <span class="year">2023</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/fallout-2024-min.jpeg" alt="Fallout" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.4</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">Fallout</h3>
+
+            <div class="card-info">
+                <span class="genre">Action</span>
+                <span class="year">2024</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/The Hunger Games-min_.jpg" alt="Hunger Games" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>6.7</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Hunger Games: The Ballad of Songbirds & Snakes</h3>
+
+            <div class="card-info">
+                <span class="genre">Adventure</span>
+                <span class="year">2023</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/The Ministry-of-Ungentlemanly-Warfare-min.jpg" alt="The ministry of Ungentlemanly" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.3</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Ministry of Ungentlemanly Warfare
+            </h3>
+
+            <div class="card-info">
+                <span class="genre">Action</span>
+                <span class="year">2024</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/The Boys-min.webp" alt="The Boys" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.7</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Boys</h3>
+
+            <div class="card-info">
+                <span class="genre">Comedy</span>
+                <span class="year">2019</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/Game-of-Thrones-min.jpeg" alt="Game of Thrones" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>9.2</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">Game of Thrones</h3>
+
+            <div class="card-info">
+                <span class="genre">Drama</span>
+                <span class="year">2011-2019</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/The-Gentlemen-min.jpeg" alt="The Gentlemen" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.1</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Gentlemen</h3>
+
+            <div class="card-info">
+                <span class="genre">Crime</span>
+                <span class="year">2024</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/the-lord-of-the-rings-min.jpg" alt="The Lord of the Rings" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>8.9</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Lord of the Rings</h3>
+
+            <div class="card-info">
+                <span class="genre">Fantasy</span>
+                <span class="year">2001</span>
+            </div>
+         </div>
+
+        </div>
+        <div class="movie-card">
+            <div class="card-head">
+                <img src="/img/the-sandman-min-poster.webp" alt="The Sandman" class="card-img">
+
+                <div class="card-overlay">
+
+                    <div class="bookmark">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+
+                    </div>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>7.7</span>
+                    </div>
+
+                    <div class="play-movie">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+         <div class="card-body">
+            <h3 class="card-title">The Sandman</h3>
+
+            <div class="card-info">
+                <span class="genre">Dark fantasy</span>
+                <span class="year">2022</span>
+            </div>
+         </div>
+
+        </div>
+    </div>
+
+    <button class="load-more">Load More</button>
+</section>
+
+<section class="category" id="category">
+    <div class="movie-head">
+    <h2 class="movie-header"> More to explore</h2>
+    <h3 class="movie-header-third">Category
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </h3>
+    </div>
+   
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="/img/alladin-poster-min.jpg" alt="Movie for family" class="card-image">
+            <div class="name">Family</div>
+            <div class="total">100+</div>
+        </div>
+  
+         <div class="category-card">
+            <img src="/img/The Boys-min.webp" alt="Action Movie" class="card-image">
+            <div class="name">Action</div>
+            <div class="total">150+</div>
+        </div>
+ 
+        <div class="category-card">
+            <img src="/img/game-of-thrones-poster-min.webp" alt="Fantasy Movie" class="card-image">
+            <div class="name">Fantasy</div>
+            <div class="total">120+</div>
+        </div>
+
+        <div class="category-card">
+            <img src="/img/john-wick-min.webp" alt="Crime Movie" class="card-image">
+            <div class="name">Crime</div>
+            <div class="total">140+</div>
+        </div>
+
+        <div class="category-card">
+            <img src="/img/why-women-kill-poster.jpeg" alt="Comedy Movie" class="card-image">
+            <div class="name">Comedy</div>
+            <div class="total">160+</div>
+        </div>
+
+       <div class="category-card">
+            <img src="/img/Dropout-min-poster.jpeg" alt="Biography Movie" class="card-image">
+            <div class="name">Biography</div>
+            <div class="total">110+</div>
+        </div> 
+
+        <div class="category-card">
+            <img src="/img/house-min.jpeg" alt="Drama Movie" class="card-image">
+            <div class="name">Drama</div>
+            <div class="total">140+</div>
+        </div> 
+
+        <div class="category-card">
+            <img src="/img/Sugar-min-Poster.jpg" alt="Thriller Movie" class="card-image">
+            <div class="name">Thriller</div>
+            <div class="total">80+</div>
+        </div> 
+    </div>
+
+</section>
+
+<section class="soon" id="soon">
+    <div class="movie-head">
+        <h2 class="movie-header">Coming soon</h2>
+        <h3 class="movie-header-third">Trailers for upcoming releases
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </h3>
+        </div>
+  
+        <div class="soon-grid">
+            <div class="soon-card">
+
+                <div class="card-head">
+                  <video src="/assets/dune-patr-two.mp4" class="card-vid" muted controls="true"></video>
+                  <!--  <div class="play">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>-->
+                </div>
+            
+                <div class="card-body">
+                    <img src="/img/Denis-Villeneuve.webp" alt="Denis Villeneuve" class="avatar">
+                    <div class="card-info">
+                    <p class="soon-badge">Dune Parth 2</p>
+                    <p class="soon-date">Jul 25</p>
+                    <p class="total-viewers">305K viewers</p>
+                    <p>Director<span class="card-title"> Denis Villeneuve</span></p> 
+                </div>
+                </div>
+
+            </div>
+
+            <div class="soon-card">
+
+                <div class="card-head">
+                  <video src="/assets/houseoftheDragon-trailer.mp4" class="card-vid" muted controls="true"></video>
+               <!--    <div class="play">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>-->
+                </div>
+            
+                <div class="card-body">
+                    <img src="/img/Miguel-Sapochnik.jpg" alt="Miguel Sapochnik" class="avatar">
+                    <div class="card-info">
+                    <p class="soon-badge">House of the dragon</p>
+                    <p class="soon-date">Jun 16</p>
+                    <p class="total-viewers">605K viewers</p>
+                    <p>Director <span class="card-title">Miguel Sapochnik</span></p> 
+                </div>
+                </div>
+
+            </div>
+
+            <div class="soon-card">
+
+                <div class="card-head">
+                  <video src="/assets/the-little-mermaid.mp4" class="card-vid" muted controls="true"></video>
+                <!--    <div class="play">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+            
+                <div class="card-body">
+                    <img src="/img/Rob-Marshall.jpg" alt="Rob Marshall" class="avatar">
+                    <div class="card-info">
+                    <p class="soon-badge">The little Mermaid</p>
+                    <p class="soon-date">May 26</p>
+                    <p class="total-viewers">15K viewers</p>
+                    <p>Director <span class="card-title">Rob Marshall</span></p> 
+                </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-brand">
+        <img src="/img/mymovies.png" alt="Logo" class="footer-logo">
+        <p class="slogan">Online cinema MyMovies</p>
+
+        <div class="social-link">
+          
+            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <ul>
+            <h4 class="link-heading">MyMovies</h4>
+            <li class="link-item"><a href="#">About us</a></li>
+            <li class="link-item"><a href="#">My profile</a></li>
+            <li class="link-item"><a href="#">Pricing plans</a></li>
+            <li class="link-item"><a href="#">Contacts</a></li>
+        </ul>
+
+        <ul>
+            <h4 class="link-heading">Browse</h4>
+
+            <li class="link-item"><a href="#">Live News</a></li>
+            <li class="link-item"><a href="#">Community</a></li>
+            <li class="link-item"><a href="#">Movies</a></li>
+            <li class="link-item"><a href="#">TV Shows</a></li>
+
+        </ul>
+
+        <ul>
+            <h4 class="link-heading">Watch</h4>
+            <li class="link-item"><a href="#">Kids</a></li>
+            <li class="link-item"><a href="#">Adults</a></li>
+            <li class="link-item"><a href="#">Trend</a></li>
+            <li class="link-item"><a href="#">My List</a></li>
+
+        </ul>
+
+        <ul>
+            <h4 class="link-heading">Help</h4>
+
+            <li class="link-item"><a href="#">Account & Billing</a></li>
+            <li class="link-item"><a href="#">Plants & Pricing</a></li>
+            <li class="link-item"><a href="#">Supported</a></li>
+            <li class="link-item"><a href="#">Accessibility</a></li>
+
+        </ul>
+     </div>
+    </div>
+
+    <div class="footer-copyright">
+
+        <div class="copyright">
+            <p>&copy; copyright 2024 MyMovies</p>
+        </div>
+
+        <div class="wrapper">
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms condition</a>
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>        
+<script src="/js/script.js"></script>        
+
+<script>
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
+
+</body>
+</html>
